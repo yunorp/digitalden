@@ -304,7 +304,7 @@ export default function Home() {
                     
                   >
                     <strong> CARRO </strong> 
-                    <MenuItem value={250}>D</MenuItem>
+                    <MenuItem value={275}>D</MenuItem>
                     <MenuItem value={325}>C</MenuItem>
                     <MenuItem value={375}>B</MenuItem>
                     <MenuItem value={425}>A</MenuItem>
