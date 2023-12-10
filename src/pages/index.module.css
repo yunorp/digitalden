@@ -22,10 +22,13 @@
     
   }
   .main .containerBox{
-    width: 500px;;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .main .containerBox > .box1{
-    width: 500px;
+    width: 700px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -39,7 +42,7 @@
     height: auto;
     padding-bottom: 20px;
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
     justify-content: center;
     align-items:center;
     background-color: white;
@@ -77,10 +80,11 @@
   .boxTotal{
     width: 150px;
     height: auto;
+    border: 1px solid orange;
     border-radius: 20px;
     text-align: center;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px var(--primary);
+    box-shadow: 0px 0px 10px 0px orange;
   }
   .boxTotal h1{
     color:white;
@@ -115,11 +119,11 @@
     width:100%;
     display: flex;
     justify-content: center;
-    grid-column: span 2;
+    grid-column: span 3;
     padding-top: 20px;
   }
   .assinatura{
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     padding-right: 5px;
@@ -143,7 +147,12 @@
     .boxTitulo{
       border-radius: 0;
     }
+    .containerBox{
+      width: 100%!important;
+    }
     .box1{
+        display: flex!important;
+        flex-direction: column!important;
         width: 100%!important;
         border-radius: 0!important;
         height: auto!important;
@@ -152,14 +161,22 @@
         border-radius: 0;
     }
     .boxInputs1{
-        flex-direction: column;
-        align-items: center;
+        width: 100%!important;
+        height: auto!important;
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center!important;
         padding-top: 10px!important;
         padding-bottom: 10px!important;
     }
     .box2{
         width: 100%!important;     
         border-radius: 0!important;
+        display: flex!important;
+        flex-direction: column!important;
+    }
+    .box2 > div{
+      width: 80%;
     }
     .boxInputs2{
         width: 100%!important;
@@ -177,6 +194,11 @@
     .sectionTotal{
         width: 100%!important;
         display: flex!important;
-        justify-content: center;
+        justify-content: start;
+        position:fixed;
+    }
+    .btnBox{
+      width: 100%;
+      justify-content: flex-end;
     }
   }
