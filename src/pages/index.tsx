@@ -18,8 +18,8 @@ import { purple,yellow,green,blue } from '@mui/material/colors';
 import { NextApiResponse } from 'next';
 import Head from 'next/head';
 import { useEffect } from 'react';
-//import Checkbox from '@mui/material/Checkbox';
-//import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 export default function Home() {
 
@@ -535,20 +535,20 @@ export default function Home() {
                   />
                 </FormControl>
 
-//                <FormControl sx={{ m: 1, width: '20ch' }}>
-//                  <TextField
-//                    value={QTDbateria}
-//                    onChange={handleQTDbateriaChange}
-//                    id="filled-number"
-//                    label="Secret"
-//                    name="QTDbateria"
-//                    type="number"
-  //                  InputLabelProps={{
-    //                  shrink: true,
-      //              }}
-        //            variant="standard"
-          //        />
-            //    </FormControl>
+                <FormControl sx={{ m: 1, width: '20ch' }}>
+                  <TextField
+                    value={QTDbateria}
+                    onChange={handleQTDbateriaChange}
+                    id="filled-number"
+                    label="Secret"
+                    name="QTDbateria"
+                    type="number"
+                    InputLabelProps={{
+                      shrink: true,
+                    }}
+                    variant="standard"
+                  />
+                </FormControl>
 
 //                <FormControl sx={{ m: 1, width: '20ch' }}>
 //                  <TextField
