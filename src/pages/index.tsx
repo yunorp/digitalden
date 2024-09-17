@@ -18,8 +18,8 @@ import { purple,yellow,green,blue } from '@mui/material/colors';
 import { NextApiResponse } from 'next';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
+//import Checkbox from '@mui/material/Checkbox';
+//import FormControlLabel from '@mui/material/FormControlLabel';
 
 export default function Home() {
 
@@ -430,28 +430,6 @@ export default function Home() {
                   <FormControlLabel control={<Checkbox checked={apenasReparo} onChange={handleApenasReparoChange} />} label="Apenas Reparo" />
                 </FormControl>
 
-                <FormControl variant='standard' sx={{ m: 1, width: '20ch' }}>
-                  <InputLabel id="demo-simple-select-label">Tipo</InputLabel>
-                  <Select
-                    type='number'
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    onChange={handleNumero2Change}
-                    value={String(value2)}
-                    name="tipo"
-                    label="Age"                    
-                  >
-                    <MenuItem value={0}>Nenhum</MenuItem>
-                    <strong> CARRO </strong>                    
-                    <MenuItem value={apenasReparo === true ? 10 : 50}>D</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 10 : 40}>C</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 10 : 50}>B</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 10 : 60}>A</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 10 : 70}>S</MenuItem>
-                    <strong> MOTO </strong>   
-                    <MenuItem value={apenasReparo === true ? 10 : 60}>M</MenuItem>      
-                  </Select>
-                </FormControl>
                 <FormControl sx={{ m: 1, width: '20ch' }}>
                   <TextField
                       value={value1}
@@ -557,50 +535,50 @@ export default function Home() {
                   />
                 </FormControl>
 
-                <FormControl sx={{ m: 1, width: '20ch' }}>
-                  <TextField
-                    value={QTDbateria}
-                    onChange={handleQTDbateriaChange}
-                    id="filled-number"
-                    label="Secret"
-                    name="QTDbateria"
-                    type="number"
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                    variant="standard"
-                  />
-                </FormControl>
+//                <FormControl sx={{ m: 1, width: '20ch' }}>
+//                  <TextField
+//                    value={QTDbateria}
+//                    onChange={handleQTDbateriaChange}
+//                    id="filled-number"
+//                    label="Secret"
+//                    name="QTDbateria"
+//                    type="number"
+  //                  InputLabelProps={{
+    //                  shrink: true,
+      //              }}
+        //            variant="standard"
+          //        />
+            //    </FormControl>
 
-                <FormControl sx={{ m: 1, width: '20ch' }}>
-                  <TextField
-                    value={QTDpneu}
-                    onChange={handleQTDpneuChange}
-                    id="filled-number"
-                    label="Secret"
-                    name="QTDpneu"
-                    type="number"
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                    variant="standard"
-                  />
-                </FormControl>
+//                <FormControl sx={{ m: 1, width: '20ch' }}>
+//                  <TextField
+//                    value={QTDpneu}
+//                    onChange={handleQTDpneuChange}
+//                    id="filled-number"
+//                    label="Secret"
+//                    name="QTDpneu"
+//                    type="number"
+//                    InputLabelProps={{
+//                      shrink: true,
+ //                   }}
+//                    variant="standard"
+//                  />
+//                </FormControl>
 
-                <FormControl sx={{ m: 1, width: '20ch' }}>
-                  <TextField
-                    value={QTDcinto}
-                    onChange={handleQTDcintoChange}
-                    id="filled-number"
-                    label="Secret"
-                    name="QTDcinto"
-                    type="number"
-                    InputLabelProps={{
-                      shrink: true,
-                    }}
-                    variant="standard"
-                  />
-                </FormControl>
+//                <FormControl sx={{ m: 1, width: '20ch' }}>
+//                  <TextField
+//                    value={QTDcinto}
+//                    onChange={handleQTDcintoChange}
+//                    id="filled-number"
+//                    label="Secret"
+//                    name="QTDcinto"
+//                    type="number"
+//                    InputLabelProps={{
+//                      shrink: true,
+//                    }}
+//                    variant="standard"
+//                  />
+//                </FormControl>
 
                 
                 
