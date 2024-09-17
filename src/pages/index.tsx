@@ -550,35 +550,9 @@ export default function Home() {
                   />
                 </FormControl>
 
-//                <FormControl sx={{ m: 1, width: '20ch' }}>
-//                  <TextField
-//                    value={QTDpneu}
-//                    onChange={handleQTDpneuChange}
-//                    id="filled-number"
-//                    label="Secret"
-//                    name="QTDpneu"
-//                    type="number"
-//                    InputLabelProps={{
-//                      shrink: true,
- //                   }}
-//                    variant="standard"
-//                  />
-//                </FormControl>
 
-//                <FormControl sx={{ m: 1, width: '20ch' }}>
-//                  <TextField
-//                    value={QTDcinto}
-//                    onChange={handleQTDcintoChange}
-//                    id="filled-number"
-//                    label="Secret"
-//                    name="QTDcinto"
-//                    type="number"
-//                    InputLabelProps={{
-//                      shrink: true,
-//                    }}
-//                    variant="standard"
-//                  />
-//                </FormControl>
+
+
 
                 
                 
