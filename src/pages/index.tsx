@@ -227,7 +227,7 @@ export default function Home() {
 
   const updateValores = (tipo: number, quantidade: number) => {
     const result1 = value1 * formData.tipo;
-    const result2 = QTDlockpick * 600 + QTDflipper * 1500 + QTDkit * 1000 + QTDkm  + QTDbateria * 3500 + QTDalicate * 1800 + QTDoleo * 1000 + QTDchave * 2000 + ReparoFora * 500 + QTDpneu * 500 + QTDcinto * 5000;
+    const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm  + QTDbateria * 3500 + QTDalicate * 1000 + QTDoleo * 1200 + QTDchave * 00 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50;
     const result = result1 + result2;
     const valorMaoDeObra = result * 0.50;
     // valor com desconto aplicado
@@ -246,7 +246,7 @@ export default function Home() {
     e.preventDefault();
 
   const result3 = formData.quantidade * formData.tipo;
-  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1500 + formData.QTDkit * 1000 + formData.QTDkm + formData.QTDbateria * 3500 + formData.QTDalicate * 1800 + formData.QTDoleo * 1000 + formData.QTDchave * 2000 + formData.ReparoFora * 500 + formData.QTDpneu * 500 + formData.QTDcinto * 5000;
+  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1200 + formData.QTDkit * 600 + formData.QTDkm + formData.QTDbateria * 3500 + formData.QTDalicate * 900 + formData.QTDoleo * 1200 + formData.QTDchave * 1 + formData.ReparoFora * 50 + formData.QTDpneu * 50 + formData.QTDcinto * 50;
   const resultTotal = result3 + result4;
   const valorMaoDeObraAprendiz = resultTotal * 0.50;
   // valor com desconto aplicado
@@ -330,7 +330,7 @@ export default function Home() {
   
 
   const result3 = formData.quantidade * formData.tipo;
-  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1500 + formData.QTDkit * 1000 + formData.QTDkm + formData.QTDbateria * 3500 + formData.QTDalicate * 1800 + formData.QTDoleo * 1000 + formData.QTDchave * 2000 + formData.ReparoFora * 500 + formData.QTDpneu * 500 + formData.QTDcinto * 5000;
+  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1200 + formData.QTDkit * 600 + formData.QTDkm + formData.QTDbateria * 3500 + formData.QTDalicate * 900 + formData.QTDoleo * 1200 + formData.QTDchave * 1 + formData.ReparoFora * 50 + formData.QTDpneu * 50 + formData.QTDcinto * 50;
   const resultTotal = result3 + result4;
   const valorMaoDeObraAprendiz = resultTotal * 0.50;
   // valor com desconto aplicado
@@ -443,13 +443,13 @@ export default function Home() {
                   >
                     <MenuItem value={0}>Nenhum</MenuItem>
                     <strong> CARRO </strong>                    
-                    <MenuItem value={apenasReparo === true ? 900 : 250}>D</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 1100 : 400}>C</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 1300 : 500}>B</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 1500 : 600}>A</MenuItem>
-                    <MenuItem value={apenasReparo === true ? 1700 : 700}>S</MenuItem>
+                    <MenuItem value={apenasReparo === true ? 10 : 50}>D</MenuItem>
+                    <MenuItem value={apenasReparo === true ? 10 : 40}>C</MenuItem>
+                    <MenuItem value={apenasReparo === true ? 10 : 50}>B</MenuItem>
+                    <MenuItem value={apenasReparo === true ? 10 : 60}>A</MenuItem>
+                    <MenuItem value={apenasReparo === true ? 10 : 70}>S</MenuItem>
                     <strong> MOTO </strong>   
-                    <MenuItem value={apenasReparo === true ? 1000 : 650}>M</MenuItem>      
+                    <MenuItem value={apenasReparo === true ? 10 : 60}>M</MenuItem>      
                   </Select>
                 </FormControl>
                 <FormControl sx={{ m: 1, width: '20ch' }}>
@@ -473,7 +473,7 @@ export default function Home() {
                     value={QTDlockpick}
                     onChange={handleQTDlockpickChange}
                     id="filled-number"
-                    label="QTD Lockpick"
+                    label="QTD Carregador"
                     name="QTDlockpick"
                     type="number"
                     InputLabelProps={{
@@ -488,7 +488,7 @@ export default function Home() {
                     value={QTDflipper}
                     onChange={handleQTDflipperChange}
                     id="filled-number"
-                    label="QTD Flipper"
+                    label="QTD Radio"
                     name="QTDflipper"
                     type="number"
                     InputLabelProps={{
@@ -503,7 +503,7 @@ export default function Home() {
                     value={QTDkit}
                     onChange={handleQTDkitChange}
                     id="filled-number"
-                    label="QTD kit reparo"
+                    label="QTD VPN"
                     name="QTDkit"
                     type="number"
                     InputLabelProps={{
@@ -517,7 +517,7 @@ export default function Home() {
                     value={QTDoleo}
                     onChange={handleQTDoleoChange}
                     id="filled-number"
-                    label="QTD Oleo"
+                    label="QTD Celular"
                     name="QTDoleo"
                     type="number"
                     InputLabelProps={{
@@ -547,7 +547,7 @@ export default function Home() {
                     value={QTDalicate}
                     onChange={handleQTDalicateChange}
                     id="filled-number"
-                    label="QTD Cera Simples"
+                    label="QTD Tablet"
                     name="QTDalicate"
                     type="number"
                     InputLabelProps={{
