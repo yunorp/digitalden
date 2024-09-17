@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 204, 0, 204;
   --background-end-rgb: 255, 255, 255;
 }
 *{
@@ -23,7 +23,7 @@ body > div{
 }
 body {
   color: rgb(var(--foreground-rgb));
-  background: url(../../public/wallpaperflare.com_wallpaper\ \(4\).jpg);
+  background: url(../../public/wallpaperflare.com_wallpaper\ \(5\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
