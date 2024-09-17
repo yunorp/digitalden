@@ -102,7 +102,7 @@ export default function Home() {
   }
 
   const result1 = value1 * value2;
-  const result2 = QTDlockpick * 600 + QTDflipper * 1500 + QTDkit * 1000 + QTDkm + QTDbateria * 3500 + QTDalicate * 1800 + QTDoleo * 1000 + QTDchave * 2000 + ReparoFora * 500 + QTDpneu * 500 + QTDcinto * 5000 + bonus;
+  const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm + QTDbateria * 3500 + QTDalicate * 900 + QTDoleo * 1200 + QTDchave * 10 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50 + bonus;
   const result = result1 + result2;
   const valorAprendiz = result * 0.50;
   const valorMaquinaAprendiz = result - valorAprendiz;
@@ -227,7 +227,7 @@ export default function Home() {
 
   const updateValores = (tipo: number, quantidade: number) => {
     const result1 = value1 * formData.tipo;
-    const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm  + QTDbateria * 3500 + QTDalicate * 1000 + QTDoleo * 1200 + QTDchave * 00 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50;
+    const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm  + QTDbateria * 3500 + QTDalicate * 900 + QTDoleo * 1200 + QTDchave * 10 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50;
     const result = result1 + result2;
     const valorMaoDeObra = result * 0.50;
     // valor com desconto aplicado
@@ -404,13 +404,13 @@ export default function Home() {
       
       <main className={styles.main}>
       <Head>
-        <title>Calculadora</title>
+        <title>Calculadora DigitalDen</title>
         <link rel="icon" href="/hayes.webp" />
       </Head>
         <div className={styles.containerBox}>
           <div className={styles.box1}>  
             <div className={styles.boxTitulo}>
-              <h1>Calculadora</h1>
+              <h1>Calculadora DigitalDen</h1>
             </div>
             <div className={styles.boxInputs1}>            
               <form className={styles.box2} onSubmit={handleSubmit}>
@@ -419,7 +419,7 @@ export default function Home() {
                           value={formData.custumizador}
                           onChange={handleVendedorChange}
                           id="filled-number"
-                          label="Nome do Mêcanico"
+                          label="Nome do Funcionario"
                           name='custumizador'
                           type="text"
                           variant="standard"
@@ -532,7 +532,7 @@ export default function Home() {
                     value={QTDchave}
                     onChange={handleQTDchaveChange}
                     id="filled-number"
-                    label="QTD Chave de fenda"
+                    label="Secret"
                     name="QTDkit"
                     type="number"
                     InputLabelProps={{
@@ -562,7 +562,7 @@ export default function Home() {
                     value={QTDbateria}
                     onChange={handleQTDbateriaChange}
                     id="filled-number"
-                    label="QTD Cera Profissional"
+                    label="Secret"
                     name="QTDbateria"
                     type="number"
                     InputLabelProps={{
@@ -577,7 +577,7 @@ export default function Home() {
                     value={QTDpneu}
                     onChange={handleQTDpneuChange}
                     id="filled-number"
-                    label="QTD de pneu"
+                    label="Secret"
                     name="QTDpneu"
                     type="number"
                     InputLabelProps={{
@@ -592,7 +592,7 @@ export default function Home() {
                     value={QTDcinto}
                     onChange={handleQTDcintoChange}
                     id="filled-number"
-                    label="QTD de cinto de corrida"
+                    label="Secret"
                     name="QTDcinto"
                     type="number"
                     InputLabelProps={{
@@ -606,7 +606,7 @@ export default function Home() {
                 
 
                 <FormControl variant='standard' sx={{ m: 1, width: '20ch' }}>
-                  <InputLabel id="demo-simple-select-label">Teve Guincho?</InputLabel>
+                  <InputLabel id="demo-simple-select-label">Teve Delivery?</InputLabel>
                   <Select
                     type='number'
                     labelId="demo-simple-select-label"
@@ -614,30 +614,15 @@ export default function Home() {
                     onChange={handleQTDkmChange}
                     value={String(QTDkm)}
                     name="ReparoFora"
-                    label="Teve reparo fora da mecanica?"                    
+                    label="Teve Delivery?"                    
                   >
                     <MenuItem value={0}>Não Teve</MenuItem>
-                    <MenuItem value={500}>Sul</MenuItem>
-                    <MenuItem value={700}>Sandy</MenuItem> 
-                    <MenuItem value={1000}>Paleto</MenuItem>        
+                    <MenuItem value={50}>Sul</MenuItem>
+                    <MenuItem value={70}>Sandy</MenuItem> 
+                    <MenuItem value={70}>Paleto</MenuItem>        
                   </Select>
                 </FormControl>
 
-                <FormControl variant='standard' sx={{ m: 1, width: '20ch' }}>
-                  <InputLabel id="demo-simple-select-label">Teve reparo fora da mecanica?</InputLabel>
-                  <Select
-                    type='number'
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    onChange={handleReparoForaChange}
-                    value={String(ReparoFora)}
-                    name="ReparoFora"
-                    label="Teve reparo fora da mecanica?"                    
-                  >
-                    <MenuItem value={1}>Sim</MenuItem>
-                    <MenuItem value={0}>Não</MenuItem>      
-                  </Select>
-                </FormControl>
 
                 <FormControl variant='standard' sx={{ m: 1, width: '20ch' }}>
                   <InputLabel id="demo-simple-select-label">Tem cupom?</InputLabel>
@@ -721,7 +706,7 @@ export default function Home() {
           </section>             
         </div>
         <footer className={styles.assinatura}>
-          <p>© Feito por <a target='_blank' href="https://ellysonalves.github.io/Meu-Portfolio/">Éllyson Alves</a></p>
+          <p>© Feito por <a target='_blank' href="https://www.twitch.tv/yunorp_">YunoRP_</a></p>
         </footer>
       </main>
   )
