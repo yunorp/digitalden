@@ -69,7 +69,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               body.quantidade,
               body.QTDlockpick,
               body.QTDflipper,
-              `=IFS(${body.QTDkm} = 0;"Não Teve"; ${body.QTDkm} = 500;"Sul"; ${body.QTDkm} = 700;"Sandy Shores"; ${body.QTDkm} = 1000;"Paleto")`,
+              `=IFS(${body.QTDkm} = 0;"Não Teve"; ${body.QTDkm} = 50;"Sul"; ${body.QTDkm} = 70;"Sandy Shores"; ${body.QTDkm} = 70;"Paleto")`,
               body.QTDchave,
               body.QTDalicate,
               body.QTDkit,
