@@ -102,7 +102,7 @@ export default function Home() {
   }
 
   const result1 = value1 * value2;
-  const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm + QTDbateria * 3500 + QTDalicate * 900 + QTDoleo * 1200 + QTDchave * 10 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50 + bonus;
+  const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm + QTDbateria * 1 + QTDalicate * 900 + QTDoleo * 1200 + QTDchave * 10 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50 + bonus;
   const result = result1 + result2;
   const valorAprendiz = result * 0.50;
   const valorMaquinaAprendiz = result - valorAprendiz;
@@ -227,7 +227,7 @@ export default function Home() {
 
   const updateValores = (tipo: number, quantidade: number) => {
     const result1 = value1 * formData.tipo;
-    const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm  + QTDbateria * 3500 + QTDalicate * 900 + QTDoleo * 1200 + QTDchave * 10 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50;
+    const result2 = QTDlockpick * 600 + QTDflipper * 1200 + QTDkit * 600 + QTDkm  + QTDbateria * 1 + QTDalicate * 900 + QTDoleo * 1200 + QTDchave * 10 + ReparoFora * 50 + QTDpneu * 50 + QTDcinto * 50;
     const result = result1 + result2;
     const valorMaoDeObra = result * 0.50;
     // valor com desconto aplicado
@@ -246,7 +246,7 @@ export default function Home() {
     e.preventDefault();
 
   const result3 = formData.quantidade * formData.tipo;
-  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1200 + formData.QTDkit * 600 + formData.QTDkm + formData.QTDbateria * 3500 + formData.QTDalicate * 900 + formData.QTDoleo * 1200 + formData.QTDchave * 1 + formData.ReparoFora * 50 + formData.QTDpneu * 50 + formData.QTDcinto * 50;
+  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1200 + formData.QTDkit * 600 + formData.QTDkm + formData.QTDbateria * 1 + formData.QTDalicate * 900 + formData.QTDoleo * 1200 + formData.QTDchave * 1 + formData.ReparoFora * 50 + formData.QTDpneu * 50 + formData.QTDcinto * 50;
   const resultTotal = result3 + result4;
   const valorMaoDeObraAprendiz = resultTotal * 0.50;
   // valor com desconto aplicado
@@ -330,7 +330,7 @@ export default function Home() {
   
 
   const result3 = formData.quantidade * formData.tipo;
-  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1200 + formData.QTDkit * 600 + formData.QTDkm + formData.QTDbateria * 3500 + formData.QTDalicate * 900 + formData.QTDoleo * 1200 + formData.QTDchave * 1 + formData.ReparoFora * 50 + formData.QTDpneu * 50 + formData.QTDcinto * 50;
+  const result4 = formData.QTDlockpick * 600 + formData.QTDflipper * 1200 + formData.QTDkit * 600 + formData.QTDkm + formData.QTDbateria * 1 + formData.QTDalicate * 900 + formData.QTDoleo * 1200 + formData.QTDchave * 1 + formData.ReparoFora * 50 + formData.QTDpneu * 50 + formData.QTDcinto * 50;
   const resultTotal = result3 + result4;
   const valorMaoDeObraAprendiz = resultTotal * 0.50;
   // valor com desconto aplicado
